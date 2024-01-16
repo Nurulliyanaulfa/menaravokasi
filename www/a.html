@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+<div class="modal fade" id="modalContactForm" tabindex="-1" role="dialog" data-toggle="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header text-center">
+
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                 <span aria-hidden="true">&times;</span></button>
+                <div class="cf2-wrap">
+                    <h2>Make Your Order Now!</h2>
+                    <div class="clearfix space40"></div>
+                    <form class="positioned" name="sentMessage" id="contactForm" action="php/contact.php" method="post">
+                        <div class="row">
+
+                            <div class="col-md-6 col-sm-6">
+                                <input name="senderName" id="senderName" placeholder="Your Name" required type="text">
+                            </div>
+                            <div class="col-md-6 col-sm-6">
+                                <input name="senderEmail" id="senderEmail" placeholder="Email Address" required type="email">
+                            </div>
+                        </div>
+
+                        <input name="address" id="address" placeholder="Address" required type="text">
+
+                        <input placeholder="Zip Code" required type="number">
+
+                        <input placeholder="Mobile No." required type="number">
+                        <select name="name" id="select" required="required">
+                         <option value=""> Protem Limited Edition - $175 </option>
+                        <option value="1"> Protem Limited Edition - $188 </option>
+                        <option value="2"> Protem Limited Edition - $199 </option>
+                        </select>
+                        <button type="submit" class="btn btn-primary btn-ico">Pre Order Now</button>
+                    </form>
